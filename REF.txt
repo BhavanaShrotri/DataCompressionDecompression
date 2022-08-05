@@ -1,0 +1,29 @@
+Creaze zip ref:
+
+https://docs.microsoft.com/en-us/dotnet/api/system.io.compression.zipfile?view=net-6.0
+https://weblogs.asp.net/jongalloway//creating-zip-archives-in-net-without-an-external-library-like-sharpziplib
+
+
+Directory
+
+https://www.tutorialspoint.com/how-to-get-all-the-directories-and-sub-directories-inside-a-path-in-chash#:~:text=To%20get%20the%20directories%20C%23,directory%2C%20and%20optionally%20searches%20subdirectories.
+
+File Formatting:
+
+https://docs.microsoft.com/en-us/answers/questions/699941/read-and-process-json-file-with-c.html
+https://stackoverflow.com/questions/21695185/change-values-in-json-file-writing-files
+
+
+
+
+https://csharpexamples.com/zip-and-unzip-files-programmatically-in-c/
+
+
+SharpZipLib
+
+https://github.com/icsharpcode/SharpZipLib/tree/master/samples/ICSharpCode.SharpZipLib.Samples/cs
+
+
+bzip:
+
+https://dotnetcodr.com/2015/01/28/compressing-and-decompressing-files-with-bzip2-in-net-c/
