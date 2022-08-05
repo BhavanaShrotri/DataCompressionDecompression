@@ -1,4 +1,5 @@
 ﻿using ICSharpCode.SharpZipLib.BZip2;
+using Ionic.Zip;
 
 class Program
 {
@@ -8,6 +9,28 @@ class Program
         string zipPath = @"C:\Users\Shro_Bha\Desktop\Zip\Test Data\testResult.zip";
         string dataDir = @"C:\ProgramData\Klingelnberg\";
 
+        #region DotNetZip 
+
+        using (ZipFile zipFile = new ZipFile())
+        {
+            //Get all filepath from folder
+            String[] files = Directory.GetFiles(startPath);
+            zipFile.CompressionMethod = CompressionMethod.BZip2;
+            zipFile.CompressionLevel = Ionic.Zlib.CompressionLevel.BestCompression;
+
+            foreach (string file in files)
+            {
+                zipFile.AddFile(file); //Adding files  
+            }
+
+            //Save the zip content in output stream
+            zipFile.Save(dataDir + "result2.bz2");
+        }
+
+        #endregion
+
+
+        #region SharpZipLib
 
         DirectoryInfo directory1 = new DirectoryInfo(startPath);
         var filenames = directory1.GetFiles();
@@ -43,6 +66,8 @@ class Program
                     Console.WriteLine(ex.Message);
                 }
             }
+
+            #endregion
         }
     }
 }
