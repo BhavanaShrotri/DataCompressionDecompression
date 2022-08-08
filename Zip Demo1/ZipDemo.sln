@@ -7,8 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharpZipLibDemo", "Zip Demo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetZipDemo", "DotNetZipDemo\DotNetZipDemo.csproj", "{94B51CED-7244-49AF-8B43-E7810DAC23D5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataEncoderDecoder", "DataEncoderDecoder\DataEncoderDecoder.csproj", "{803B661C-F828-4264-AF61-CDD266FD7C33}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SevenZipSharp", "SevenZipSharp\SevenZipSharp.csproj", "{FE0F14B1-6A44-41BF-A7AE-C921DF803F46}"
 EndProject
 Global
@@ -25,10 +23,6 @@ Global
 		{94B51CED-7244-49AF-8B43-E7810DAC23D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94B51CED-7244-49AF-8B43-E7810DAC23D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{94B51CED-7244-49AF-8B43-E7810DAC23D5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{803B661C-F828-4264-AF61-CDD266FD7C33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{803B661C-F828-4264-AF61-CDD266FD7C33}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{803B661C-F828-4264-AF61-CDD266FD7C33}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{803B661C-F828-4264-AF61-CDD266FD7C33}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FE0F14B1-6A44-41BF-A7AE-C921DF803F46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FE0F14B1-6A44-41BF-A7AE-C921DF803F46}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE0F14B1-6A44-41BF-A7AE-C921DF803F46}.Release|Any CPU.ActiveCfg = Release|Any CPU
