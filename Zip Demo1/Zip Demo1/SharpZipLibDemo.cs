@@ -1,6 +1,4 @@
-﻿using ICSharpCode.SharpZipLib.BZip2;
-using ICSharpCode.SharpZipLib.Zip;
-using Zip_Demo1;
+﻿using Zip_Demo1;
 
 class SharpZipLibDemo
 {
@@ -8,7 +6,7 @@ class SharpZipLibDemo
     {
         string directoryPathToCompress = @"C:\ProgramData\Klingelnberg\K-SmartProcessControl";
         string outputDirectoryPath = @"C:\ProgramData\Klingelnberg\";
-        
+
         TarArchiveCreation tarArchiveCreation = new();
         string tarFilePath = Path.Combine(outputDirectoryPath, "sharpzip.tar");
         tarArchiveCreation.Archive(directoryPathToCompress, tarFilePath);

@@ -1,10 +1,5 @@
 ﻿using ICSharpCode.SharpZipLib.BZip2;
 using ICSharpCode.SharpZipLib.Tar;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Zip_Demo1
 {
@@ -20,7 +15,7 @@ namespace Zip_Demo1
             var outStream = File.Create(archiveName);
             var bzip2OutputStream = new BZip2OutputStream(outStream, HighestCompressionLevel);
             var archive = TarArchive.CreateOutputTarArchive(bzip2OutputStream, TarBuffer.DefaultBlockFactor);
-            
+
             var filesInfo = GetFilesRecursively(dirName);
             int fileNo = 1;
             foreach (var fileInfo in filesInfo)
@@ -41,23 +36,11 @@ namespace Zip_Demo1
             Console.WriteLine($"{currentFileNo} / {totalFilesCount} - ({currentFileNo * 100 / totalFilesCount} %)");
         }
 
-        private static void SetArchiveOptions(TarArchive archive)
-        {
-            if (archive != null)
-            {                      // SET ARCHIVE OPTIONS
-                //archive.SetKeepOldFiles(this.keepOldFiles);
-                //archive.AsciiTranslate = this.asciiTranslate;
-
-                //archive.SetUserInfo(this.userId, this.userName, this.groupId, this.groupName);
-            }
-
-        }
-
         private static List<FileInfo> GetFilesRecursively(string directoryNameToCompress)
         {
             List<FileInfo> totalFileInfos = new();
             DirectoryInfo directoryInfo = new DirectoryInfo(directoryNameToCompress);
-            foreach(var directory in directoryInfo.GetDirectories())
+            foreach (var directory in directoryInfo.GetDirectories())
             {
                 var fileInfos = GetFilesRecursively(directory.FullName).ToList();
                 totalFileInfos.AddRange(fileInfos);
